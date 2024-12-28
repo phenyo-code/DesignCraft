@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCraft</title>
+  <link rel="stylesheet" href="career.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="DesignCraft Logo">
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="#careers" class="active">Careers</a></li>
+        <li><a href="contact.html" class="contact">Contact Us</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+  <div class="menu-divider"></div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <button class="btn-primary">Join Our Team</button>
+    </div>
+  </section>
+
+
+  <section class="career-section">
+    <div class="career-intro">
+      <h2>Build Your Career at CodeCraft</h2>
+      <p>
+        Join our team of passionate creators and problem-solvers, dedicated to crafting exceptional digital experiences. 
+        At CodeCraft, we believe in empowering talent, fostering creativity, and driving innovation to help our clients thrive.
+      </p>
+    </div>
+  
+    <div class="company-culture">
+        <h3 class="section-title">Company Culture</h3>
+      <p>
+        At CodeCraft, we’re more than a team—we’re a family. We value collaboration, continuous learning, and celebrating success together. 
+        Whether you're a tech enthusiast or a creative visionary, you'll find a home here to grow your skills and make an impact.
+      </p>
+    </div>
+  
+    <div class="openings">
+      <h2>Current Openings</h2>
+      <br>
+      <div class="opening-cards">
+        <div class="opening-card">
+          <h4>Web Developer</h4>
+          <p>Build responsive, high-performing websites for our clients while collaborating with a dynamic team.</p>
+          <a href="#" class="btn-apply">Apply Now</a>
+        </div>
+        <div class="opening-card">
+          <h4>Graphic Designer</h4>
+          <p>Create visually compelling designs for web, social media, and print campaigns.</p>
+          <a href="#" class="btn-apply">Apply Now</a>
+        </div>
+        <div class="opening-card">
+          <h4>Digital Marketing Specialist</h4>
+          <p>Develop and execute marketing strategies to drive growth and brand awareness.</p>
+          <a href="#" class="btn-apply">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="why-us">
+        <h3 class="section-title">Why Work For Us?</h3>
+      <p><strong>Innovative Work Culture:</strong> Join a dynamic team that is passionate about using the latest technologies and creative solutions to drive business success.</p>
+      <p><strong>Career Growth Opportunities:</strong> At CodeCraft, your career will always be evolving. We offer professional development programs, mentorship, and growth opportunities to help you advance in your field.</p>
+      <p><strong>Flexibility & Work-Life Balance:</strong> We understand the importance of balancing work with personal life, so we offer flexible remote work options and a supportive work environment.</p>
+      <p><strong>Collaborative Team:</strong> Work with a group of motivated, talented individuals who value collaboration, learning from each other, and solving problems together.</p>
+      <p><strong>Impactful Projects:</strong> Contribute to exciting projects that drive real change for businesses and impact their digital transformation.</p>
+    </div>
+
+    
+    <!-- Popup Form (Hidden by Default) -->
+    <div class="popup-form" id="popupForm">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h3>Apply Now</h3>
+        <p>Fill out the form below to apply for the position.</p>
+        <form id="applicationForm">
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+          </div>
+          <button type="submit" class="btn-submit">Submit Application</button>
+        </form>
+            <!-- Popup Form (Hidden by Default) -->
+      </div>
+    </div>
+  </section>
+
+  
+  
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="images/logo.png" alt="DesignCraft Logo">
+        <p>
+          Empowering businesses with tailored IT and marketing solutions.
+        </p>
+        <div class="social-icons">
+            <a href="#"><img src="images/logos_facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/bi_instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/mdi_linkedin.png" alt="LinkedIn"></a>
+          </div>
+      </div>
+      <div class="footer-links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Design Craft 2024</p>
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+
+
+  
+  
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
