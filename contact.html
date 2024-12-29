@@ -63,13 +63,13 @@
       <h2>Have questions about elevating your digital presence?</h2>
       <p>Interested in a tailored proposal or a demo?</p>
     </div>
-  
-    <form class="contact-form">
-      <input type="text" placeholder="Name" required>
-      <input type="text" placeholder="Surname" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone number" required>
-      <textarea placeholder="How can we help your business?" rows="4" required></textarea>
+
+    <form class="contact-form" id="contact-form">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="surname" placeholder="Surname" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone number" required>
+      <textarea name="message" placeholder="How can we help your business?" rows="4" required></textarea>
       <button type="submit" class="submit-btn">Submit Your Query</button>
     </form>
   
@@ -111,11 +111,26 @@
     </div>
   </footer>
 
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS with your User ID
+  emailjs.init("WdvYBpXmZbK_FoOsT"); // Replace with your actual User ID from EmailJS
 
-  
-  
-  
-  
+  // Form Submission Event
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Send the form data via EmailJS
+    emailjs.sendForm('service_qe9wmp3', 'template_95ij15s', this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+        document.getElementById('contact-form').reset(); // Reset the form after successful submission
+      }, function(error) {
+        alert('Failed to send message. Please try again later.');
+        console.error('EmailJS Error:', error);
+      });
+  });
+</script>
 
   <script src="script.js"></script>
 </body>
