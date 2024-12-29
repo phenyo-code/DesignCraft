@@ -514,3 +514,8 @@
   .footer-bottom a:hover {
     text-decoration: underline;
   }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    color: #4a90e2,
+  }

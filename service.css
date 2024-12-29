@@ -789,3 +789,45 @@
     }
   }
   
+
+  /* Responsive styling for tablets */
+@media (max-width: 768px) {
+    .web-development h2 {
+      font-size: 2rem; /* Slightly smaller font size */
+    }
+  }
+  
+  /* Responsive styling for smaller screens (mobile) */
+  @media (max-width: 480px) {
+    .web-development h2 {
+      font-size: 1.5rem; /* Smallest font size for mobile */
+    }
+  }
+
+    /* Responsive styling for tablets */
+@media (max-width: 768px) {
+    .digital-marketing h2 {
+      font-size: 2rem; /* Slightly smaller font size */
+    }
+  }
+  
+  /* Responsive styling for smaller screens (mobile) */
+  @media (max-width: 480px) {
+    .digital-marketing h2 {
+      font-size: 1.5rem; /* Smallest font size for mobile */
+    }
+  }
+
+    /* Responsive styling for tablets */
+@media (max-width: 768px) {
+    .mobile-app-development h2 {
+      font-size: 2rem; /* Slightly smaller font size */
+    }
+  }
+  
+  /* Responsive styling for smaller screens (mobile) */
+  @media (max-width: 480px) {
+    .mobile-app-development h2 {
+      font-size: 1.5rem; /* Smallest font size for mobile */
+    }
+  }
