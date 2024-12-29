@@ -650,12 +650,51 @@
     padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 2rem;
   }
   
+  .mobile-app-development {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .web-development {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .mobile-app-development h2 {
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+  }
+
+  .web-development h2 {
+    font-size: 2.5rem;
+    color: #3b82f6;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-app-development p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .web-development p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+
   .digital-marketing h2 {
     font-size: 2.5rem;
-    color: #007bff;
+    color: #3b82f6;
     margin-bottom: 1rem;
   }
   
@@ -677,7 +716,7 @@
     color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
-    width: calc(33.33% - 1rem); /* Adjust for responsiveness */
+    width: calc(33.33% - 1rem); /* Default for larger screens */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -710,5 +749,43 @@
     background-color: #007bff;
     color: #fff;
   }
-
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .digital-marketing h2 {
+      font-size: 2rem;
+    }
+  
+    .digital-marketing p {
+      font-size: 1rem;
+    }
+  
+    .service-box {
+      width: calc(50% - 1rem); /* Adjust to 2 boxes per row on medium screens */
+    }
+  
+    .cta .btn-secondary {
+      font-size: 0.9rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .digital-marketing h2 {
+      font-size: 1.8rem;
+    }
+  
+    .digital-marketing p {
+      font-size: 0.9rem;
+    }
+  
+    .service-box {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .cta .btn-secondary {
+      font-size: 0.8rem;
+      padding: 0.7rem 1.2rem;
+    }
+  }
   
